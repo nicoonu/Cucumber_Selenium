@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
-public class MyStepdefs {
+public class LoginTwitter {
 
     WebDriver chrome;
 
@@ -24,7 +24,6 @@ public class MyStepdefs {
         chrome = new ChromeDriver();
         chrome.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         chrome.get("https://www.google.com.ar/?hl=es-419");
-        //throw new PendingException();
     }
 
     @And("^Ingreso a twitter$")
